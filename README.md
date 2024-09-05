@@ -5,15 +5,15 @@
 ```bash
 cd CFU-Playground/proj
 git clone https://github.com/hyouteki/anodecfu
-make renode
+cd anodecfu
+chmod +x setup.sh
+./setup.sh
 ```
 
 ## Courtesy
 1. [anode - hyouteki](https://github.com/hyouteki/anode): An indigenous system design for anomaly detection from CCTV camera feed
 2. [CFU-Playground - google](https://github.com/google/CFU-Playground): A framework for playing with custom opcodes to accelerate TensorFlow Lite for Microcontrollers (TFLM)
-3. [tflite-micro - tensorflow](https://github.com/tensorflow/tflite-micro): Infrastructure to enable deployment of ML models to low-power resource-constrained embedded targets (including microcontrollers and digital signal processors).
 
 ## References
-1. [documentation - tflite-micro](https://www.tensorflow.org/lite/microcontrollers)
 2. [ReadTheDocs - CFU-Playground](https://cfu-playground.readthedocs.io/en/latest/index.html)
 3. [step-by-step guide - CFU-Playground](https://cfu-playground.readthedocs.io/en/latest/step-by-step.html)

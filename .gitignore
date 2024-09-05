@@ -1,2 +1,4 @@
 build/
-__pycache__/
+*.v
+**/__pycache__/
+**/venv/
