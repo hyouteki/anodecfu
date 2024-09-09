@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "models/mnist/anode.h"
-#include "models/mnist/anode_of_cnn_model.h"
-#include "models/mnist/anode_of_cnnlstm_model.h"
+#include "models/anode/anode.h"
+#include "models/anode/arson_of_cnn_model.h"
+#include "models/anode/arson_of_cnnlstm_model.h"
 #include "menu.h"
 #include "tflite.h"
 
@@ -45,7 +45,7 @@ static void Anode_Model_Set_Arson_OfCnnLstm() {
 static int32_t Anode_Model_TestHelper() {
     if (!MODEL_LOADED) {
 		printf("error: model not selected; select a model first\n");
-		return;
+		return -1;
 	}
 	printf("info: running model test");
 	tflite_classify();
@@ -55,7 +55,7 @@ static int32_t Anode_Model_TestHelper() {
 
 static void Anode_Model_Test() {
 	tflite_set_input_zeros();
-	int32_t result = anode_classify();
+	Anode_Model_TestHelper();
 }
 
 static struct Menu MENU = {

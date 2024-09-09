@@ -9,7 +9,7 @@ extern "C" {
 }
 
 static void mnist_init(void) {
-	tflite_load_model(mnist_model_tflite, mnist_model_tflite_len);
+	tflite_load_model(mnist_tflite, mnist_tflite_len);
 }
 
 static int32_t mnist_classify() {

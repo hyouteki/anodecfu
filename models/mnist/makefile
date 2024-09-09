@@ -1,2 +1,5 @@
-mnist_model.h: mnist_model.tflite
-	xxd -i mnist_model.tflite > mnist_model.h
+all: mnist_model.h
+
+%_model.h: %.tflite
+	@echo "generating '$@'"
+	@xxd -i $< > $@
