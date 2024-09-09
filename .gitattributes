@@ -1,5 +1,3 @@
-src/tensorflow/* linguist-vendored
-
 *.c linguist-language=C
 *.cc linguist-language=C++
 *.h linguist-language=C++
@@ -20,3 +18,5 @@ makefile linguist-vendored=false
 
 *.md linguist-documentation
 *.json linguist-vendored
+
+src/tensorflow/* linguist-vendored
