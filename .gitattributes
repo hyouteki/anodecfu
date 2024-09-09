@@ -19,4 +19,4 @@ makefile linguist-vendored=false
 *.md linguist-documentation
 *.json linguist-vendored
 
-src/tensorflow/* linguist-vendored
+src/tensorflow/** linguist-vendored
