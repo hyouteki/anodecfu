@@ -1,3 +1,3 @@
 ### Model descriptions
-1. [arson.of_cnn.h5](./arson.of_cnn.h5): keras model trained on arson detection task using optical flow and cnn, taken from [Arson.cnn.h5 - anode/models/OF-CNN](https://github.com/hyouteki/anode/blob/main/models/OF-CNN/Arson.cnn.h5)
-2. [arson.of_cnnlstm.tflite](./arson.of_cnnlstm.tflite): tflite model trained on arson detection task using optical flow, cnn and lstm, taken from [Arson.tflite - anode/models/OF-CNNLSTM](https://github.com/hyouteki/anode/blob/main/models/OF-CNNLSTM/Arson.tflite)
+1. [arson_of_cnn.h5](./arson_of_cnn.h5): keras model trained on arson detection task using optical flow and cnn, taken from [Arson.cnn.h5 - anode/models/OF-CNN](https://github.com/hyouteki/anode/blob/main/models/OF-CNN/Arson.cnn.h5)
+2. [arson_of_cnnlstm.tflite](./arson_of_cnnlstm.tflite): tflite model trained on arson detection task using optical flow, cnn and lstm, taken from [Arson.tflite - anode/models/OF-CNNLSTM](https://github.com/hyouteki/anode/blob/main/models/OF-CNNLSTM/Arson.tflite)
