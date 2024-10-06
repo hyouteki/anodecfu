@@ -1,4 +1,5 @@
 #!/bin/bash
 
-mv ./models/* ../../common/src/models/
-# TODO: Add tflite.cc and models.c patch
+cp -r ./models/* ../../common/src/models/
+patch ../../common/src/tflite.cc < ./patches/tflite.cc.patch
+patch ../../common/src/models/models.c < ./patches/models.c.patch

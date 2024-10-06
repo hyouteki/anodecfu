@@ -1,0 +1,24 @@
+--- models.c.bak	2024-09-18 13:46:05.652354522 +0530
++++ models.c	2024-09-18 15:08:36.600023333 +0530
+@@ -28,6 +28,8 @@
+ #include "models/mlcommons_tiny_v01/vww/vww.h"
+ #include "models/mnv2/mnv2.h"
+ #include "models/pdti8/pdti8.h"
++#include "models/anode/anode.h"
++#include "models/mnist/mnist.h"
+ 
+ inline void no_menu() {}
+ 
+@@ -40,6 +42,12 @@
+     "TfLM Models",
+     "models",
+     {
++#if defined(INCLUDE_MODEL_ANODE)
++		MENU_ITEM(AUTO_INC_CHAR, "Anomaly Detection model (anode)", anode_menu),
++#endif
++#if defined(INCLUDE_MODEL_MNIST)
++		MENU_ITEM(AUTO_INC_CHAR, "Mnist model", mnist_menu),
++#endif	  
+ #if defined(INCLUDE_MODEL_PDTI8) || defined(INCLUDE_ALL_TFLM_EXAMPLES)
+         MENU_ITEM(AUTO_INC_CHAR, "Person Detection int8 model", pdti8_menu),
+ #endif
