@@ -14,7 +14,7 @@
      "models",
      {
 +#if defined(INCLUDE_MODEL_ANODE)
-+		MENU_ITEM(AUTO_INC_CHAR, "Anomaly Detection model (anode)", anode_menu),
++		MENU_ITEM(AUTO_INC_CHAR, "Anomaly Detection model (anode)", Anode_Menu),
 +#endif
 +#if defined(INCLUDE_MODEL_MNIST)
 +		MENU_ITEM(AUTO_INC_CHAR, "Mnist model", mnist_menu),
